@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanos Chatbot</title>
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Header Section -->
+        <header>
+            <h1>Thanos</h1>
+            <p>I am Inevitable.</p>
+        </header>
+
+        <!-- Chat Area: This is where messages will appear -->
+        <div id="chat-container" class="chat-container">    <!--The box where messages appear. -->
+            <div class="message bot-message">
+                I am Thanos. Ask, and I shall answer.
+            </div>
+        </div>
+
+        <!-- Input Area: Where the user types -->
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Link to our JavaScript file for logic -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

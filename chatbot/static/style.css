@@ -1,0 +1,182 @@
+/* Global Styles */
+/* Reset default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    /* Setup a nice font */
+}
+
+/* Body Styling */
+body {
+    background-color: #000000;
+    /* Pure black background */
+    color: #ffffff;
+    /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+    /* Prevent scrolling on the body */
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    /* Limit width on large screens */
+    height: 90vh;
+    /* Takes up 90% of the screen height */
+    background-color: #121212;
+    /* Slightly lighter black/gray for contrast */
+    border-radius: 20px;
+    /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    overflow: hidden;
+    border: 1px solid #333;
+    /* Thin border */
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    background: linear-gradient(135deg, #1a0b2e, #000000);
+    /* Dark purple to black */
+    border-bottom: 1px solid #4a148c;
+    /* Purple border */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e1bee7;
+    /* Light purple text */
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Chat Area Styling */
+.chat-container {
+    flex: 1;
+    /* Take up remaining space */
+    padding: 20px;
+    overflow-y: auto;
+    /* Allow scrolling if messages overflow */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Space between messages */
+}
+
+/* Message Bubbles */
+.message {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    /* Wrap long text */
+}
+
+/* Bot Message Style */
+.bot-message {
+    align-self: flex-start;
+    /* Align to left */
+    /* Align to left */
+    background-color: #2c0e3a;
+    /* Dark purple background */
+    color: #f3e5f5;
+    /* Very light purple text */
+    border-bottom-left-radius: 2px;
+    /* Square off one corner */
+}
+
+/* User Message Style */
+.user-message {
+    align-self: flex-end;
+    /* Align to right */
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom-right-radius: 2px;
+    /* Square off one corner */
+}
+
+/* Input Area Styling */
+.input-area {
+    padding: 20px;
+    background-color: #0a0a0a;
+    border-top: 1px solid #4a148c;
+    /* Purple border */
+    display: flex;
+    gap: 10px;
+}
+
+/* Text Input Field */
+#user-input {
+    flex: 1;
+    /* Take up all available space */
+    padding: 12px 15px;
+    border-radius: 25px;
+    /* Pill shape */
+    border: 1px solid #444;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    /* Remove default blue outline */
+    transition: border-color 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #9c27b0;
+    /* Bright purple focus */
+    /* Highlight border on click */
+}
+
+/* Send Button */
+#send-btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #7b1fa2;
+    /* Purple button */
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#send-btn:hover {
+    background-color: #4a148c;
+    /* Darker purple on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+#send-btn:active {
+    transform: scale(0.95);
+    /* Click effect */
+}
+
+/* Scrollbar Customization (for Webkit browsers like Chrome) */
+.chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #4a148c;
+    border-radius: 3px;
+}
