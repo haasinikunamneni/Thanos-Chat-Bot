@@ -119,18 +119,31 @@ Users can interact with the chatbot by entering text messages and receiving AI-g
 📁 Project Structure
 
 chatbot/
+
 │
-├── app.py                  # Flask backend and API logic
+
+├── app.py  # Flask backend and API logic
+
 ├── list_models.py          # Utility script for listing Gemini models
+
 ├── .env                    # Environment variables (not tracked)
+
 │
+
 ├── templates/
+
 │   └── index.html          # Frontend HTML layout
+
 │
+
 ├── static/
+
 │   ├── style.css           # User interface styling
+
 │   └── script.js           # Frontend chat logic
+
 │
+
 └── README.md               # Project documentation
 
 ---
